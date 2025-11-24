@@ -1,17 +1,19 @@
 body {
-    margin: 20px;
+  margin: 20px;
 }
 
 .avatar {
-    width: 150px;
+  width: 150px;
 }
 
 .card {
-    border: 1px dotted blue;
-    padding: 20px;
-    display: flex;
+  padding: 20px;
+  display: flex;
 }
 
+.dotted {
+  border: 1px dotted blue;
+}
 /*
 Challenge:
 Create a utility class for the dotted blue border.
