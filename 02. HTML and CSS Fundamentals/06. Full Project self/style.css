@@ -1,0 +1,143 @@
+/* Using standard property values instead of CSS Variables */
+
+/* Base Styling and Typography */
+body {
+  margin: 0px;
+  text-align: center;
+  /* Darker text for readability */
+  color: #333333;
+  /* Light grey background for a clean look */
+  background-color: #f5f5f5;
+  /* Apply Roboto font (make sure to include the link in HTML <head>) */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  color: white;
+  height: 400px;
+  /* Add a dark overlay for better text contrast */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/mehesana.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 0 20px;
+}
+
+.hero-h1 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  /* Clean Teal background */
+  background: #00796b;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.hero-p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 0px;
+  max-width: 500px;
+  /* Clean Teal background */
+  background: #00796b;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/* Activities Section Title */
+.activities-title {
+  margin: 40px 0 20px;
+  color: #00796b; /* Teal color */
+  font-weight: 700;
+}
+
+/* Activities Layout - Simple Flexbox */
+.activities-container {
+  display: flex;
+  /* Simple centering */
+  justify-content: center;
+  align-items: flex-start;
+  /* Allows items to wrap on smaller screens */
+  flex-wrap: wrap;
+  padding: 0 20px;
+  gap: 30px; /* Space between activity items */
+}
+
+.ac-item {
+  width: 250px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.ac-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* Orange Accent Border */
+  border: 5px solid #ff9800;
+  /* Subtle box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ac-item h3 {
+  color: #00796b; /* Teal color */
+  margin: 15px 0 5px;
+}
+
+/* Guide Card Section */
+.guide-card {
+  margin: 60px auto;
+  padding: 30px;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  /* White background */
+  background: #efb0c9;
+  border-radius: 10px;
+  /* Subtle box shadow */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* Teal bottom border */
+  border-bottom: 8px solid #00796b;
+  text-align: left;
+}
+
+.card-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 30px;
+}
+
+.inner-card h3 {
+  margin-top: 0;
+  color: #00796b; /* Teal color */
+}
+
+.inner-card h4 {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #ff9800; /* Orange Accent */
+}
+
+/* Simple Mobile Adjustments (Media Query is a basic technique) */
+@media (max-width: 768px) {
+  .guide-card {
+    /* Stack image and text vertically */
+    flex-direction: column;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .card-img {
+    /* Adjust margin for vertical stack */
+    margin: 0 0 20px 0;
+  }
+}
