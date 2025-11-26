@@ -1,9 +1,12 @@
-let lapsCompleted = 0
+let lapsCompleted = 0;
 
 // Create a function that increments the lapsCompleted variable with one
 // Run it three times
 
-
-
-
-console.log(lapsCompleted)
+function lapAdd() {
+  lapsCompleted += 1;
+}
+lapAdd();
+lapAdd();
+lapAdd();
+console.log(lapsCompleted);
