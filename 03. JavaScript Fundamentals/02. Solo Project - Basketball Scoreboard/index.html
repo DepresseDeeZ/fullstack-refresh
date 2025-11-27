@@ -1,16 +1,38 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-            </div>
-            <div>
-                <h3>GUEST</h3>
-            </div>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Science+Gothic:wght@100..900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="home">
+        <h3 class="heading">HOME</h3>
+        <h2 id="homeScore" class="numberScore"></h2>
+        <div>
+          <button onclick="addOneHome()" class="btn_class">+ 1</button>
+          <button onclick="addTwoHome()" class="btn_class">+ 2</button>
+          <button onclick="addThreeHome()" class="btn_class">+ 3</button>
         </div>
-        <script src="index.js"></script>
-    </body>
+      </div>
+      <div class="guest">
+        <h3 class="heading">GUEST</h3>
+        <h2 id="guestScore" class="numberScore"></h2>
+        <div>
+          <button onclick="addOneGuest()" class="btn_class">+ 1</button>
+          <button onclick="addTwoGuest()" class="btn_class">+ 2</button>
+          <button onclick="addThreeGuest()" class="btn_class">+ 3</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button id="clear" onclick="clearBtn()">Clear</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

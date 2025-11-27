@@ -1,8 +1,58 @@
+html,
 body {
-    margin: 0;
+  font-family: "Science Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.container {
+  width: 500px;
+  display: flex;
+  margin: 20px auto;
+
+  /* margin: 20px; */
+  justify-content: space-around;
+  background: #14213d;
+  border-radius: 10px;
+  color: white;
+  font-size: 40px;
+  padding: 0px;
+}
+.heading {
+  margin: 20px 0 0 0;
+}
+.numberScore {
+  background: black;
+  text-align: center;
+  color: #fca311;
+  font-family: MyCustomFont;
+  font-size: 80px;
+  padding: 0px 10px;
+  margin: 0px;
+}
+.btn_class {
+  border: 1px solid #48cae4;
+  border-radius: 2px;
+  background: #14213d;
+  color: #48cae4;
+  font-family: MyCustomFont;
+  padding: 10px 10px;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+}
+#clear {
+  background: #14213d;
+  color: #48cae4;
+  padding: 10px 20px;
+  border-bottom: 5px solid #48cae4;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.container {
-    display: flex;
-    justify-content: space-around;
+@font-face {
+  font-family: "MyCustomFont"; /* Choose a name for your font */
+  src: url("digital-7.regular.ttf") format("truetype"); /* Specify the path and format */
+  font-weight: normal; /* Optional: define font weight */
+  font-style: normal; /* Optional: define font style */
 }

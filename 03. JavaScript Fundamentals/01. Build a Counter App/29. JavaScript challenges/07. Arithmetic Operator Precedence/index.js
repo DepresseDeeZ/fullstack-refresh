@@ -7,13 +7,16 @@ Challenge:
    change the code so we log out the correct cost of the trip.
 */
 
-const tripLengthDays = 2
-const tripDistanceKM = 300
-const fuelPricePerKM = 1.5
-const hotelCostPerNight = 60
-const hotelDiscountPerNight = 6
-const foodCost = 50
+const tripLengthDays = 2;
+const tripDistanceKM = 300;
+const fuelPricePerKM = 1.5;
+const hotelCostPerNight = 60;
+const hotelDiscountPerNight = 6;
+const foodCost = 50;
 
-const totalCost = foodCost + tripDistanceKM * fuelPricePerKM + hotelCostPerNight - hotelDiscountPerNight * tripLengthDays
+const totalCost =
+  foodCost +
+  tripDistanceKM * fuelPricePerKM +
+  (hotelCostPerNight - hotelDiscountPerNight) * tripLengthDays;
 
-console.log(totalCost)
+console.log(totalCost);

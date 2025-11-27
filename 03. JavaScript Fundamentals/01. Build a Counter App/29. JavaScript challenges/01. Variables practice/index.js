@@ -4,4 +4,8 @@
 
 // Log fullName to the console
 
+let firstName = "Umang";
+let lastName = "Raval";
+let fullName = firstName + " " + lastName;
 
+console.log(fullName);
